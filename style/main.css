@@ -1,3 +1,99 @@
-body{
-    background-color: #ccc;
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* elementos base */
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial black';
+    font-size: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* game principal */
+.game-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/resident.jpg');
+
+    height: 550px;
+    background-size: cover; /*cobrir toda a área da div*/
+
+    display: flex; /*joga os componentes em linha*/
+    flex-direction: column; /*coloca o display flex como coluna*/
+    justify-content: center; /*centralizar todo conteúdo do game-principal*/
+    align-items: flex-start; /*faz com que o conteúdo começe sempre da esquerda*/
+
+}
+
+.game-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.game-principal .titulo {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial ;
+    margin-top: 20%;
+
+}
+
+.game-principal .botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: .5s ease all; 
+
+}
+
+.game-principal .botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.game-principal .icon {
+    margin-right: 7px;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.game-principal .container {
+    width: 70%;
 }
