@@ -54,6 +54,7 @@ header nav a:hover {
 
 }
 
+
 .game-principal .descricao {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -129,3 +130,57 @@ a:hover {
     
     color: black;
 }
+
+
+/*página mais informações*/
+
+.game-principal-info {
+    font-size: 16px;
+    display: flex; /*joga os componentes em linha*/
+    flex-direction: column; /*coloca o display flex como coluna*/
+    justify-content: center; /*centralizar todo conteúdo do game-principal*/
+    margin: 0 auto;
+    max-width: 1000px;
+    
+
+}
+
+.game-principal-info .titulo {
+    font-size: 40px;
+    font-family: Arial ;
+    padding-top: 10%;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
+
+}
+
+.game-principal-info .descricao {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.game-principal-info .img-info {
+    display: inline;
+}
+
+.game-principal-info .titulo-img-info {
+    font-size: 30px;
+    font-family: Arial ;
+    padding-bottom: 10px;
+    padding-top: 100px;
+}
+
+.game-principal-info .descricao-img-info {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+
